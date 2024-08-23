@@ -2,7 +2,7 @@
 
 # UN Goal Timelines - Data Pull
 
-TO DO: Update our [UN Goals CoLab](https://colab.research.google.com/drive/1riRnKUGNGkJZOU6qJoznAxjySInQjnFQ?usp=sharing) to pull DCID's from our [Google Sheet with Goal tabs](https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing).
+TO DO: Update our [UN Goals CoLab](https://colab.research.google.com/drive/1riRnKUGNGkJZOU6qJoznAxjySInQjnFQ?usp=sharing) to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet Goal tabs</a> - Priyanka
 
 TO DO: Save .csv files to GitHub using tokens. - Ivy
 <!--
@@ -19,26 +19,27 @@ TO DO: Update our [Google Sheet UN Goal tabs](https://docs.google.com/spreadshee
 TO DO: Also update our [Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
 -->
 
-TO DO: From the sheet columns, display a navigation hierarchy with 3 levels using javascript. Here's [.csv for the "Air" tab](https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv).  
+TO DO: From the sheet columns, populate the #chartVariable dropdown.  Here's [.csv for the "Air" tab](https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv).  
 
 Goal (Air) > Topic (Emissions) > Subtopic (Methane)
 
 
+TO DO: Point [timeline javascript](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) at the Initial [timeline output Abhishek created](https://github.com/ModelEarth/community-data/blob/master/locations/datacommons/Country.csv).
+
+---
+
 SPECS:
 
-We'll create one function in the CoLab that generates all versions of the timelines.
+In the CoLab, create one function called earthColab that generates all versions of the timeline csv files.
 
-We'll pass the function the column LocationType as: Country, State, County
+Pass the earthColab function the column **Scope** as: Country, State, County
 
-We'll convert from 3 to 2-char country codes.
+Convert from 3 to 2-char country codes.
 
-We'll send rules in the function's parameters to identify which locations to omit (like which countries lack emissions data).
+Send rules in the function's parameters to identify which locations to omit (like which countries lack emissions data).
 
-We'll pull the valid year range from the Google Sheet row. 
+Pull the valid year range from the Google Sheet row in **StartYear** and **EndYear**
 
-The rules can reside in each DCID row in the Google Sheet.
-
-Initial [timeline output Abhishek created](https://github.com/ModelEarth/community-data/blob/master/locations/datacommons/Country.csv).
 
 We'll send our .csv output to UN Goal subfolders at [data-commons/docs/data](https://github.com/ModelEarth/data-commons/tree/main/docs/data)
 

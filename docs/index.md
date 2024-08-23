@@ -1,7 +1,7 @@
 [UN Goal Timelines](../)
 # Data Commons
 
-We're automating [multi-country timelines](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) using [Google's UN Goals Data](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) (widen browser to see nav on left).
+We're automating [multi-country timelines](data) using [Google's UN Goals Data](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) (widen browser to see nav on left).
 
 Our javascript [Feed Player](/feed/view/#feed=gdc) loads and displays data from the Google Data Commons API.
 
